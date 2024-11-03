@@ -133,11 +133,23 @@ form input {
     color: white;
 }
 
-.button-registrar {
-    padding: 10px 45px;
+.container-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.container-buttons1 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex;
+
+}
+
+.button {
+    padding: 10px 25px;
     background-color: forestgreen;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     border: none;
     border-radius: 12px;
@@ -145,8 +157,11 @@ form input {
 }
 
 
-.button-registrar:hover {
+.button:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
 
+.resultado {
+    font-size: 18px;
+}

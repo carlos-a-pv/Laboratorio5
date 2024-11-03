@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="./index.js" defer></script>
 </head>
 <body>
 
@@ -21,32 +23,58 @@
     </div> -->
 
     <div class="container-form">
-        <form action="miservidor.com" method="post">
+        <form name="form-teacher" method="post" action="index.php" >
             <fieldset>
                 <legend>Registro de profesores</legend>
                 
                 <label for="cedula">Cedula</label>
-                <input type="text" id="cedula" placeholder="Ingrese su cedula">
+                <input name="cedula" type="text" id="cedula" placeholder="Ingrese su cedula" >
                 
-                <label for="name">Nombre</label>
-                <input type="text" id="name" placeholder="Ingrese su nombre">
+                <label for="nombre">Nombre</label>
+                <input name="nombre" type="text" id="nombre" placeholder="Ingrese su nombre" >
     
                 <label for="fecha_nacimiento">Fecha de nacimiento</label>
-                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+                <input name="fecha_nacimiento" type="date" name="fecha_nacimiento" id="fecha_nacimiento" />
     
                 <label for="direccion">Direccion</label>
-                <input type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion">
+                <input name="direccion" type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion">
     
                 <label for="telefono">Telefono</label>
                 <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+                
+                <label for="">CUPO: </label>
+                <select name="" id="">
+                    <option value="">$1000000.00</option>
+                    <option value="">$3000000.00</option>
+                    <option value="">$5000000.00</option>
+                </select>
+                <!-- <label for="sueldo">Sueldo</label>
+                <input type="number" id="sueldo" placeholder="Ingrese su sueldo" value="100000" required> -->
 
-                <label for="sueldo">Sueldo</label>
-                <input type="number" id="sueldo" placeholder="Ingrese su sueldo" value="100000">
-    
-                <input type="submit" value="Registrar" class="button-registrar">
-    
+
+                
+                <!-- /**<div class="container-buttons">
+                    <input type="button" value="Calcular" class="button" id="calcular" >
+                    <input type="submit" value="Consultar" class="button" id="onsultar" >
+                    <input type="reset" value="Cancelar" class="button">
+                    
+                </div> -->
+                <div class="container-buttons1">
+                    <input type="submit" value="Agregar" class="button" onclick="return agregarProfesor();" />
+                    <input type="submit" value="Eliminar" class="button">
+                    <input type="submit" value="Consultar" class="button">
+                    <input type="submit" value="Modificar" class="button">
+                </div>
             </fieldset>
         </form>
     </div>
+
+    <div id="resultado" class="resultado">
+
+    </div>
+
+    <p style="text-align: center;">
+        <a href="/lab5/index.html">Volver al inicio</a>
+    </p>
 </body>
 </html>
